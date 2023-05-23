@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientLoginPageController">
+   <children>
+      <AnchorPane prefHeight="378.0" prefWidth="398.0">
+         <children>
+            <ImageView fitHeight="388.0" fitWidth="398.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/loginPatient.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="408.0" prefHeight="388.0" prefWidth="375.0">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="55.0" prefHeight="295.0" prefWidth="297.0">
+               <children>
+                  <Label fx:id="userName" layoutX="21.0" layoutY="120.0" stylesheets="@../../css/style.css" text="User Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="password" layoutX="21.0" layoutY="183.0" stylesheets="@../../css/style.css" text="Password">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserName" layoutX="134.0" layoutY="121.0" onAction="#showUserName" />
+                  <TextField fx:id="txtPassword" layoutX="134.0" layoutY="184.0" onAction="#showPassword" />
+                  <Button fx:id="btnLogin" layoutX="97.0" layoutY="256.0" mnemonicParsing="false" onAction="#showLogin" prefHeight="25.0" prefWidth="104.0" stylesheets="@../../css/style.css" text="Login">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Label fx:id="welcome" layoutX="82.0" layoutY="14.0" stylesheets="@../../css/style.css" text="Welcome">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
